@@ -1,0 +1,15 @@
+David Arteaga i Martí Duran
+
+/************************************\
+
+
+Dades per a fer Login com a recepcionista:
+
+Usuari: 87654321A
+Contrasenya: 87654321A 
+
+
+
+/************************************\
+
+Base de dades adjunta _importar_hotel.sql

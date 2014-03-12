@@ -1,0 +1,22 @@
+﻿
+
+OK Validacions en php - només Camps buits i confirmar contrasenya
+
+OK Reservar habitació - Avisar de validació correcta o feta
+OK Index Un únic arxiu php
+OK Tot carpetes model vista controlador js aparte - Javascripts a part 
+
+
+
+
+OK Try-catch
+
+OK data reserva validar correctament
+
+OK Connectar arrays para cargar tarifas
+Connectar arrays para cargar nuevos clientes
+Fer que funcioni el crear, etc, carregar en arrays
+
+Si no hi ha habitacions disponibles mostrar avís
+
+OK Login a part del index

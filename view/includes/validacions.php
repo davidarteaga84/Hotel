@@ -132,16 +132,4 @@ if ($accio=="reservarHabitacio") { ?>
 	}
 <?php } ?>
 
-<?php 
-if ($accio=="reservarData") { ?>
-	function valida() {
-		dataEntrada=document.dates.dataEntrada.value;
-		dataSortida=document.dates.dataSortida.value;
-		if (!dataEntrada) { alert ('Introdueix data d\'entrada'); }
-		else if (!dataSortida) { alert ('Introdueix data de sortida'); }
-		else if (validarData(dataEntrada) && validarData(dataSortida)) { return true; }
-		return false;
-	}
-<?php } ?>
-
 </script>

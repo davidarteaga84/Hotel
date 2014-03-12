@@ -20,3 +20,6 @@ Fer que funcioni el crear, etc, carregar en arrays
 Si no hi ha habitacions disponibles mostrar avís
 
 OK Login a part del index
+
+
+lalalala

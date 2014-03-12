@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Temps de generació: 03-03-2014 a les 10:28:42
+-- Temps de generació: 02-03-2014 a les 11:56:46
 -- Versió del servidor: 5.6.12-log
 -- Versió de PHP: 5.4.12
 
@@ -63,10 +63,9 @@ CREATE TABLE IF NOT EXISTS `client` (
 
 INSERT INTO `client` (`nif`, `nom`, `cognom`, `activat`) VALUES
 ('00000000T', 'Sergio', 'Arteaga', 0),
-('41511058Z', 'Joaquin', 'Sevilla', 0),
+('41511058Z', 'Joaquim', 'Nadal', 0),
 ('49830939J', 'Joaquin', 'Martinez', 0),
 ('53127437J', 'David', 'Arteaga', 0),
-('93800787W', 'Manuel', 'Escobedo', 0),
 ('97626643S', 'David', 'Martin', 0);
 
 -- --------------------------------------------------------
@@ -86,16 +85,16 @@ CREATE TABLE IF NOT EXISTS `habitacio` (
 --
 
 INSERT INTO `habitacio` (`numHabitacio`, `categoria`) VALUES
-(101, 'A'),
-(102, 'A'),
+(101, 'C'),
+(102, 'B'),
 (103, 'B'),
-(104, 'C'),
-(105, 'C'),
-(106, 'B'),
-(201, 'A'),
+(104, 'B'),
+(105, 'A'),
+(106, 'A'),
+(201, 'C'),
 (202, 'B'),
-(203, 'C'),
-(204, 'C');
+(203, 'B'),
+(204, 'A');
 
 -- --------------------------------------------------------
 
@@ -111,25 +110,19 @@ CREATE TABLE IF NOT EXISTS `reserva` (
   `dataSortida` date NOT NULL,
   `activa` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Bolcant dades de la taula `reserva`
 --
 
 INSERT INTO `reserva` (`id`, `habitacio`, `nifClient`, `dataEntrada`, `dataSortida`, `activa`) VALUES
-(2, 101, '00000000T', '2014-04-14', '2014-04-16', 0),
-(3, 202, '49830939J', '2014-03-04', '2014-03-07', 1),
-(5, 204, '41511058Z', '2014-02-28', '2014-03-01', 1),
-(13, 102, '53127437J', '2014-01-07', '2014-01-11', 1),
-(14, 204, '49830939J', '2014-02-27', '2014-02-27', 1),
-(15, 201, '93800787W', '2014-02-24', '2014-02-25', 0),
-(16, 204, '53127437J', '2014-03-19', '2014-03-25', 0),
-(17, 103, '00000000T', '2014-04-04', '2014-04-08', 1),
-(18, 101, '41511058Z', '2014-03-06', '2014-03-10', 1),
-(19, 106, '00000000T', '2014-03-08', '2014-03-09', 1),
-(20, 101, '53127437J', '2014-03-12', '2014-03-16', 1),
-(21, 201, '97626643S', '2014-03-03', '2014-03-10', 0);
+(1, 101, '53127437J', '2014-04-01', '2014-04-02', 1),
+(2, 103, '00000000T', '2014-04-16', '2014-04-17', 0),
+(3, 202, '49830939J', '2014-03-01', '2014-03-02', 0),
+(4, 101, '00000000T', '2014-02-18', '2014-02-20', 1),
+(9, 106, '53127437J', '2014-03-19', '2014-03-22', 1),
+(10, 204, '97626643S', '2014-03-02', '2014-03-05', 1);
 
 -- --------------------------------------------------------
 
@@ -151,9 +144,9 @@ CREATE TABLE IF NOT EXISTS `usuaris` (
 --
 
 INSERT INTO `usuaris` (`id`, `dni`, `nom`, `contrasenya`, `nivellAcces`) VALUES
-(1, '12345678A', 'admin', 'bcc67d8524948bbd873e4df12c89b182', 1),
 (2, '87654321A', 'recepcionista1', '098ec1a1e2d910c82c6b6bc569d00e6d', 2),
-(3, '87654321B', 'recepcionista2', 'bcc67d8524948bbd873e4df12c89b182', 2);
+(3, '12345678A', 'admin', 'bcc67d8524948bbd873e4df12c89b182', 1),
+(4, '2', 'recepcionista2', 'c81e728d9d4c2f636f067f89cc14862c', 2);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

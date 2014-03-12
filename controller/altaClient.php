@@ -9,7 +9,7 @@ $cognom=$_POST['cognom'];
 try {
 	$client=new Client($nif, $nom, $cognom); 
 	$consulta=$client->trobar_client_nif();
-	foreach ($consulta as $fila){ $valor=$fila[0]; }
+	foreach ($consulta as $fila){ $valor=$fila[0];}
 	if ($valor==false) { //No ha trobat el nif i el podem donar d'alta
 		$client->afegir_client();
 		header ("Location: ../view/llistarClients.php?errAltaClient=0");

@@ -3,7 +3,7 @@
 <h1>Reservar habitaci&oacute;</h1>
 
 <table>
-	<form action="../view/reservarNumHab.php" method="post" name="dates" onsubmit="return valida();">
+	<form action="../view/reservarNumHab.php" method="post">
 		<tr>
 			<th>Data d'entrada:</th>
 			<td>

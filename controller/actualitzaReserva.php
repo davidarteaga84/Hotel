@@ -11,10 +11,10 @@ $dataSortida=$_POST['dataSortida'];
 try {
 	$reserva=new Reserva($nifClient,$habitacio,$dataEntrada,$dataSortida); 
 	$reserva->modificar_reserva($id);
-	header ("Location: ../view/mostrarReserves.php?errModificarReserva=0");
+	header ("Location: ../view/mostrarReserves.php?errModificarHabitacio=0");
 } catch (Exception $e) {
     echo 'Excepción capturada: ', $e->getMessage(), "\n";
-	header ("Location: ../view/mostrarReserves.php?errModificarReserva=1");
+	header ("Location: ../view/mostrarReserves.php?errModificarHabitacio=1");
 }
 
 ?>

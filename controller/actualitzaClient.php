@@ -11,7 +11,7 @@ try {
 	$client->modificar_client();
 	header ("Location: ../view/llistarClients.php?errModificarClient=0");
 } catch (Exception $e) {
-    echo 'Excepción capturada: ', $e->getMessage(), "\n";
+    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 }
 
 ?>

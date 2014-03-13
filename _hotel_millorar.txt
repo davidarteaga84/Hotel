@@ -1,17 +1,24 @@
-﻿
+﻿OK Benvinguda administrador
+
+CREAR USUARI: que si no valida dni no crei usuari
+CANVIAR NOM: fer un select option amb els recepcionistes
+CANVIAR CONTRASENYA: fer un select option amb els recepcionistes
+ELIMINAR USUARI: fer un select option amb els recepcionistes i un "alert/aceptar" en javascript abans d'esborrar
+
+OK Cliente Creado con éxito
 
 OK Validacions en php - només Camps buits i confirmar contrasenya
 
-OK Reservar habitació - Avisar de validació correcta o feta
-OK Index Un únic arxiu php
-OK Tot carpetes model vista controlador js aparte - Javascripts a part 
+Reservar habitació - Avisar de validació correcta o feta
+Un únic arxiu php
+Tot carpetes model vista controlador js aparte - Javascripts a part 
 
 
 
 
-OK Try-catch
+Try-catch
 
-OK data reserva validar correctament
+Treure espais a la data de reserva per validar correctament
 
 OK Connectar arrays para cargar tarifas
 Connectar arrays para cargar nuevos clientes
@@ -19,4 +26,4 @@ Fer que funcioni el crear, etc, carregar en arrays
 
 Si no hi ha habitacions disponibles mostrar avís
 
-OK Login a part del index
+Login a part del index

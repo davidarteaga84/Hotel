@@ -8,7 +8,7 @@ include('../controller/reservarNumHab.php');
 <table>
 	<form action="../view/reservarHabitacio.php" method="post">
 		<tr>
-			<th>Tipus d'habitaci&oacute;:</th>
+			<th>Numero d'habitaci&oacute;:</th>
 			<td>
 				<select name="habitacio">
 					<?php 
